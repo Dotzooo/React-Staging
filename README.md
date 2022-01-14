@@ -1,9 +1,12 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## 資料夾結構
-    1.public => 靜態資源文件夾
-    2.src  => 源碼文件夾
+# todoList相關知識點
+        1.拆分組件、實現靜態組件，需注意: className、style的寫法
+        2.動態初始化列表，如何確定將資料狀態放在哪個組件的state中?
+                    -- 某個組件使用 => 放在其自身的的state當中
+                    -- 某些組件使用 => 放在它們共用的父組件state中(狀態提升)
+        3.關於父組件與子組件之間參數傳遞:
+                1.【父組件】給【子組件】傳遞資料: 通過 props 傳遞
+                2.【子組件】給【父組件】傳遞資料: 通過 props 傳遞，要求【父組件】提前給【子組件】傳遞一個函數
+        4.注意defaultChecked 和 checked的區別，相似的還有 defaultValue 和 value
+		5.資料狀態在哪裡，操作資料狀態的方法就在哪裡
 
 
